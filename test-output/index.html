@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Sri Ram\AppData\Local\Temp\testng-eclipse-271155764\testng-customsuite.xml</span>
+                    <span>C:\Users\Sri Ram\AppData\Local\Temp\testng-eclipse-924640612\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="vTiger.Practice.ReadDataFromCMDLine" class="method navigator-link" hash-for-method="ReadData">ReadData</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="vTiger.ContactsTests.CreateContactWithOrganizationTest" class="method navigator-link" hash-for-method="createContactWithOrg">createContactWithOrg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="vTiger.ContactsTests.CreateContactWithOrganizationTest" class="method navigator-link" hash-for-method="demoTest">demoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +127,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">vTiger.Practice.ReadDataFromCMDLine</span>
+              <span class="class-name">vTiger.ContactsTests.CreateContactWithOrganizationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ReadData">
-                  </a> <!-- ReadData -->
-                  <span class="method-name">ReadData</span>
+                  <a name="createContactWithOrg">
+                  </a> <!-- createContactWithOrg -->
+                  <span class="method-name">createContactWithOrg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoTest">
+                  </a> <!-- demoTest -->
+                  <span class="method-name">demoTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +149,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sri Ram\AppData\Local\Temp\testng-eclipse-271155764\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sri Ram\AppData\Local\Temp\testng-eclipse-924640612\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,11 +158,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;vTiger.Practice.ReadDataFromCMDLine&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;ReadData&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- vTiger.Practice.ReadDataFromCMDLine --&gt;
+      &lt;class name=&quot;vTiger.ContactsTests.CreateContactWithOrganizationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -174,6 +182,22 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">RegressionSuite</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">demoTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SmokeSuite</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createContactWithOrg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -190,16 +214,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ReadData')
-data.setCell(0, 2, 'vTiger.Practice.ReadDataFromCMDLine')
-data.setCell(0, 3, 7);
+data.setCell(0, 1, 'createContactWithOrg')
+data.setCell(0, 2, 'vTiger.ContactsTests.CreateContactWithOrganizationTest')
+data.setCell(0, 3, 19417);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'demoTest')
+data.setCell(1, 2, 'vTiger.ContactsTests.CreateContactWithOrganizationTest')
+data.setCell(1, 3, 2);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 ms</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -210,6 +238,14 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createContactWithOrg</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">navigate to organization</span>
+                <span class="reporter-method-output">click on create org look up image</span>
+                <span class="reporter-method-output">created organization withTCS865</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -225,11 +261,47 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">vTiger.Practice.ReadDataFromCMDLine</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">ReadData</span>
+              <div class="chronological-class-name">vTiger.ContactsTests.CreateContactWithOrganizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">bsConfig</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">bcConfig</span>
+                <span class="method-start">344 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">bmConfig</span>
+                <span class="method-start">3515 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createContactWithOrg</span>
+                <span class="method-start">5932 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">amConfig</span>
+                <span class="method-start">25356 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">bmConfig</span>
+                <span class="method-start">26607 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">demoTest</span>
+                <span class="method-start">28503 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">amConfig</span>
+                <span class="method-start">28507 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">acConfig</span>
+                <span class="method-start">32236 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">asConfig</span>
+                <span class="method-start">32872 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
